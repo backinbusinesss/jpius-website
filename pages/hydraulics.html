@@ -30,7 +30,9 @@
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </nav>
 
+  <!-- HERO con immagine reale -->
   <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('../assets/images/hydr-hero.jpg');"></div>
     <div class="page-hero-content">
       <p class="page-hero-tag" data-i18n="hydr.hero.tag">Business Unit 02</p>
       <h1 data-i18n="hydr.hero.title">Idraulica</h1>
@@ -46,20 +48,14 @@
           <span class="section-tag" data-i18n="hydr.s1.tag">Idraulica applicata</span>
           <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;"
               data-i18n-html="hydr.s1.title">Gestire l'acqua con <em>precisione</em> e visione</h2>
-          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="hydr.s1.p1">La progettazione idraulica richiede competenze specialistiche unite a una visione sistemica del territorio. Il nostro team combina modellazione numerica avanzata, conoscenza normativa e sensibilità ambientale per affrontare le sfide idriche del presente e del futuro.</p>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="hydr.s1.p1">La progettazione idraulica richiede competenze specialistiche unite a una visione sistemica del territorio.</p>
           <p style="line-height:1.9;color:var(--mid);margin-bottom:2rem;" data-i18n="hydr.s1.p2">Operiamo su scala locale e regionale, dalla singola opera idraulica alla pianificazione di bacino, con un approccio integrato che considera sia gli aspetti tecnici che quelli ecologici.</p>
           <a href="contact.html" class="btn btn-teal-outline" data-i18n="hydr.s1.cta">Richiedi consulenza</a>
         </div>
-        <div style="background:var(--teal-faint);border:1px solid var(--border);min-height:400px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 300 300" width="260" height="260" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.25;">
-            <path d="M20 180 Q60 120 100 150 Q140 180 180 120 Q220 60 260 90" stroke="#005550" stroke-width="2" fill="none"/>
-            <path d="M20 200 Q60 160 100 175 Q140 190 180 150 Q220 110 260 130" stroke="#005550" stroke-width="1.5" stroke-dasharray="5,3" fill="none"/>
-            <path d="M20 220 Q60 200 100 200 Q140 200 180 180 Q220 160 260 170" stroke="#005550" stroke-width="1" stroke-dasharray="3,4" fill="none"/>
-            <circle cx="100" cy="150" r="6" stroke="#005550" stroke-width="1.5" fill="none"/>
-            <circle cx="180" cy="120" r="6" stroke="#005550" stroke-width="1.5" fill="none"/>
-            <line x1="20" y1="240" x2="260" y2="240" stroke="#005550" stroke-width="1"/>
-            <line x1="20" y1="240" x2="20" y2="80" stroke="#005550" stroke-width="1"/>
-          </svg>
+        <!-- IMMAGINE REALE -->
+        <div class="approach-img">
+          <img src="../assets/images/hydr-vasca-volano.jpg" alt="Idraulica — J+S" loading="lazy" />
+          <div class="approach-img-overlay"></div>
         </div>
       </div>
 
@@ -94,6 +90,53 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- GALLERIA PROGETTI -->
+  <section class="project-gallery-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Portfolio</span>
+        <h2>I nostri <em>progetti</em></h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-item wide" data-reveal>
+          <img src="../assets/images/hydr-teleriscaldamento.jpg" alt="Teleriscaldamento Lecco-Valmadrera" loading="lazy" />
+          <div class="project-caption">
+            <h4>Teleriscaldamento Lecco-Valmadrera</h4>
+            <span>Reti idriche</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="0">
+          <img src="../assets/images/hydr-vasca-volano.jpg" alt="Vasca di Laminazione Misinto" loading="lazy" />
+          <div class="project-caption">
+            <h4>Vasca di Laminazione — Misinto</h4>
+            <span>Difesa idraulica</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="150">
+          <img src="../assets/images/hydr-molgorana.jpg" alt="Vasca Molgorana" loading="lazy" />
+          <div class="project-caption">
+            <h4>Vasca Molgorana</h4>
+            <span>Opere idrauliche</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="0">
+          <img src="../assets/images/hydr-dorsale.jpg" alt="Dorsale Caverna" loading="lazy" />
+          <div class="project-caption">
+            <h4>Dorsale Caverna</h4>
+            <span>Reti acquedotto</span>
+          </div>
+        </div>
+        <div class="project-item wide" data-reveal data-delay="150">
+          <img src="../assets/images/hydr-cocito.jpg" alt="CO.CI.TO" loading="lazy" />
+          <div class="project-caption">
+            <h4>CO.CI.TO</h4>
+            <span>Consorzio idrico</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

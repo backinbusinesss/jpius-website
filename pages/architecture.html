@@ -30,7 +30,9 @@
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </nav>
 
+  <!-- HERO con immagine reale -->
   <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('../assets/images/arch-hero.jpg');"></div>
     <div class="page-hero-content">
       <p class="page-hero-tag" data-i18n="arch.hero.tag">Business Unit 01</p>
       <h1 data-i18n="arch.hero.title">Architettura</h1>
@@ -46,22 +48,14 @@
           <span class="section-tag" data-i18n="arch.s1.tag">Il nostro approccio</span>
           <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;"
               data-i18n-html="arch.s1.title">Architettura come <em>sintesi</em> tra forma e funzione</h2>
-          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="arch.s1.p1">Il nostro studio affronta la progettazione architettonica con un metodo che integra analisi del contesto, ascolto del cliente e ricerca formale. Il risultato sono edifici che rispondono alle esigenze pratiche senza rinunciare alla qualità dello spazio vissuto.</p>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="arch.s1.p1">Il nostro studio affronta la progettazione architettonica con un metodo che integra analisi del contesto, ascolto del cliente e ricerca formale.</p>
           <p style="line-height:1.9;color:var(--mid);margin-bottom:2rem;" data-i18n="arch.s1.p2">Lavoriamo su scala residenziale, commerciale e pubblica, sempre con la stessa cura per i dettagli costruttivi e per la sostenibilità ambientale.</p>
           <a href="contact.html" class="btn btn-teal-outline" data-i18n="arch.s1.cta">Richiedi un preventivo</a>
         </div>
-        <div style="background:var(--teal-faint);border:1px solid var(--border);min-height:400px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 300 300" width="280" height="280" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.25;">
-              <polygon points="150,30 270,230 30,230" stroke="#005550" stroke-width="1.5"/>
-              <polygon points="150,60 240,210 60,210" stroke="#005550" stroke-width="1"/>
-              <polygon points="150,90 210,190 90,190" stroke="#005550" stroke-width="0.8"/>
-              <line x1="150" y1="30" x2="150" y2="230" stroke="#005550" stroke-width="0.8" stroke-dasharray="4,4"/>
-              <rect x="120" y="195" width="60" height="35" stroke="#005550" stroke-width="1.5"/>
-              <line x1="150" y1="195" x2="150" y2="230" stroke="#005550" stroke-width="1"/>
-            </svg>
-          </div>
-          <span style="font-family:var(--font-head);font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--teal);opacity:0.5;position:relative;z-index:1;" data-i18n="arch.hero.title">Architettura</span>
+        <!-- IMMAGINE REALE al posto del placeholder SVG -->
+        <div class="approach-img">
+          <img src="../assets/images/arch-atrium.jpg" alt="Architettura — J+S" loading="lazy" />
+          <div class="approach-img-overlay"></div>
         </div>
       </div>
 
@@ -96,6 +90,53 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- GALLERIA PROGETTI -->
+  <section class="project-gallery-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Portfolio</span>
+        <h2>I nostri <em>progetti</em></h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-item wide" data-reveal>
+          <img src="../assets/images/arch-sport.jpg" alt="Sport" loading="lazy" />
+          <div class="project-caption">
+            <h4>Sport & Benessere</h4>
+            <span>Architettura</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="0">
+          <img src="../assets/images/arch-residenziale.jpg" alt="Residenziale" loading="lazy" />
+          <div class="project-caption">
+            <h4>Residenziale</h4>
+            <span>Architettura</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="150">
+          <img src="../assets/images/arch-retail.jpg" alt="Retail" loading="lazy" />
+          <div class="project-caption">
+            <h4>Retail</h4>
+            <span>Architettura commerciale</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="0">
+          <img src="../assets/images/arch-collettivita.jpg" alt="Collettività" loading="lazy" />
+          <div class="project-caption">
+            <h4>Collettività</h4>
+            <span>Spazi pubblici</span>
+          </div>
+        </div>
+        <div class="project-item wide" data-reveal data-delay="150">
+          <img src="../assets/images/arch-terziari.jpg" alt="Terziari" loading="lazy" />
+          <div class="project-caption">
+            <h4>Terziari & Uffici</h4>
+            <span>Architettura commerciale</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

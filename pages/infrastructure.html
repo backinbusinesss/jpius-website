@@ -30,7 +30,9 @@
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </nav>
 
+  <!-- HERO con immagine reale -->
   <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('../assets/images/infra-hero.jpg');"></div>
     <div class="page-hero-content">
       <p class="page-hero-tag" data-i18n="infra.hero.tag">Business Unit 03</p>
       <h1 data-i18n="infra.hero.title">Infrastrutture</h1>
@@ -46,23 +48,14 @@
           <span class="section-tag" data-i18n="infra.s1.tag">Infrastrutture civili</span>
           <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;"
               data-i18n-html="infra.s1.title">Connettere il territorio con <em>intelligenza</em></h2>
-          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="infra.s1.p1">Le infrastrutture sono la spina dorsale del territorio: connettono persone, merci e servizi, e determinano la qualità della vita di intere comunità. Il nostro approccio integra competenze di ingegneria civile, geotecnica e pianificazione territoriale per progettare opere durature e sostenibili.</p>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="infra.s1.p1">Le infrastrutture sono la spina dorsale del territorio: connettono persone, merci e servizi, e determinano la qualità della vita di intere comunità.</p>
           <p style="line-height:1.9;color:var(--mid);margin-bottom:2rem;" data-i18n="infra.s1.p2">Dalla fattibilità alla direzione lavori, seguiamo ogni fase del processo con rigore metodologico e attenzione alla sicurezza.</p>
           <a href="contact.html" class="btn btn-teal-outline" data-i18n="infra.s1.cta">Parliamo del tuo progetto</a>
         </div>
-        <div style="background:var(--teal-faint);border:1px solid var(--border);min-height:400px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 300 300" width="260" height="260" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.25;">
-            <rect x="40" y="140" width="220" height="16" stroke="#005550" stroke-width="1.5"/>
-            <line x1="40" y1="148" x2="260" y2="148" stroke="#005550" stroke-width="0.8" stroke-dasharray="6,4"/>
-            <line x1="80" y1="140" x2="80" y2="80" stroke="#005550" stroke-width="1.5"/>
-            <line x1="220" y1="140" x2="220" y2="80" stroke="#005550" stroke-width="1.5"/>
-            <path d="M80,80 Q150,40 220,80" stroke="#005550" stroke-width="1.5" fill="none"/>
-            <line x1="40" y1="156" x2="40" y2="200" stroke="#005550" stroke-width="1.5"/>
-            <line x1="260" y1="156" x2="260" y2="200" stroke="#005550" stroke-width="1.5"/>
-            <circle cx="80" cy="80" r="4" stroke="#005550" stroke-width="1.5" fill="none"/>
-            <circle cx="220" cy="80" r="4" stroke="#005550" stroke-width="1.5" fill="none"/>
-            <line x1="150" y1="80" x2="150" y2="140" stroke="#005550" stroke-width="1" stroke-dasharray="3,3"/>
-          </svg>
+        <!-- IMMAGINE REALE -->
+        <div class="approach-img">
+          <img src="../assets/images/infra-a9.jpg" alt="Infrastrutture — J+S" loading="lazy" />
+          <div class="approach-img-overlay"></div>
         </div>
       </div>
 
@@ -97,6 +90,39 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- GALLERIA PROGETTI -->
+  <section class="project-gallery-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Portfolio</span>
+        <h2>I nostri <em>progetti</em></h2>
+      </div>
+      <div class="project-grid cols-2">
+        <div class="project-item" data-reveal>
+          <img src="../assets/images/infra-a4.jpg" alt="A4 Corsia Dinamica" loading="lazy" />
+          <div class="project-caption">
+            <h4>A4 — Corsia Dinamica</h4>
+            <span>Viabilità autostradale</span>
+          </div>
+        </div>
+        <div class="project-item" data-reveal data-delay="150">
+          <img src="../assets/images/infra-a9.jpg" alt="A9 Lainate-Como" loading="lazy" />
+          <div class="project-caption">
+            <h4>A9 — Lainate Como</h4>
+            <span>Infrastruttura stradale</span>
+          </div>
+        </div>
+        <div class="project-item wide" data-reveal>
+          <img src="../assets/images/infra-urban.jpg" alt="Urbanizzazione" loading="lazy" />
+          <div class="project-caption">
+            <h4>Urbanizzazione</h4>
+            <span>Reti e infrastrutture urbane</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
