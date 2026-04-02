@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — J+S</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <style>
+    .team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:3rem; }
+    .team-card {
+      border:1px solid var(--border); padding:2.5rem 2rem;
+      text-align:center;
+      transition:transform 0.3s var(--ease-out), border-color 0.3s;
+    }
+    .team-card:hover { transform:translateY(-6px); border-color:var(--teal); }
+    .team-avatar {
+      width:80px; height:80px;
+      border-radius:50%; background:var(--teal-faint);
+      border:2px solid var(--border);
+      margin:0 auto 1.5rem;
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-head); font-size:1.4rem; font-weight:900; color:var(--teal);
+    }
+    .team-card h3 { font-family:var(--font-head); font-size:1.05rem; font-weight:700; color:var(--dark); margin-bottom:0.3rem; }
+    .team-card .role { font-family:var(--font-head); font-size:0.7rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--teal); margin-bottom:1rem; }
+    .team-card p { font-size:0.9rem; line-height:1.7; color:var(--mid); }
+    .values-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; margin-top:3rem; }
+    .value-block { padding:3rem; background:var(--off-white); }
+    .value-num { font-family:var(--font-head); font-size:0.65rem; font-weight:700; letter-spacing:2px; color:var(--teal); margin-bottom:1rem; }
+    .value-block h3 { font-family:var(--font-head); font-size:1.2rem; font-weight:700; color:var(--dark); margin-bottom:0.75rem; }
+    .value-block p { font-size:0.9rem; line-height:1.8; color:var(--mid); }
+    @media(max-width:768px){
+      .team-grid{grid-template-columns:1fr;}
+      .values-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo"><a href="../index.html"><span class="logo-text">J<span class="logo-plus">+</span>S</span></a></div>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="architecture.html" class="nav-link">Architecture</a>
+      <a href="hydraulics.html" class="nav-link">Hydraulics</a>
+      <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="it">IT</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="page-hero-tag">Chi Siamo</p>
+      <h1>About Us</h1>
+      <p>Un team multidisciplinare di professionisti uniti dalla passione per il progetto e dall'impegno verso la qualità, la sostenibilità e l'innovazione.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+
+      <!-- MISSION -->
+      <div class="two-col" style="margin-bottom:6rem;" data-reveal>
+        <div>
+          <span class="section-tag">La nostra storia</span>
+          <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;">
+            Vent'anni di <em style="font-style:normal;color:var(--teal);">progettazione integrata</em>
+          </h2>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;">
+            J+S nasce dall'incontro di professionalità complementari. Nel corso di oltre vent'anni abbiamo costruito un modello di studio che unisce architettura, ingegneria idraulica e progettazione infrastrutturale in un'unica realtà coerente e sinergica.
+          </p>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;">
+            Oggi il team conta specialisti di diverse discipline che collaborano su ogni progetto, garantendo una visione integrata che riduce i conflitti progettuali e ottimizza i risultati per il committente.
+          </p>
+          <p style="line-height:1.9;color:var(--mid);">
+            La nostra forza è la capacità di affrontare la complessità: progetti che richiedono competenze trasversali trovano in J+S un interlocutore unico e affidabile.
+          </p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1.5rem;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+            <div style="padding:2.5rem;background:var(--teal);text-align:center;border-radius:2px;">
+              <span style="display:block;font-family:var(--font-head);font-size:2.5rem;font-weight:900;color:#fff;line-height:1;">150+</span>
+              <span style="display:block;font-family:var(--font-head);font-size:0.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:0.5rem;">Progetti</span>
+            </div>
+            <div style="padding:2.5rem;background:var(--off-white);border:1px solid var(--border);text-align:center;border-radius:2px;">
+              <span style="display:block;font-family:var(--font-head);font-size:2.5rem;font-weight:900;color:var(--teal);line-height:1;">20+</span>
+              <span style="display:block;font-family:var(--font-head);font-size:0.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-top:0.5rem;">Anni</span>
+            </div>
+          </div>
+          <div style="padding:2.5rem;background:var(--off-white);border:1px solid var(--border);border-radius:2px;">
+            <p style="font-family:var(--font-head);font-size:1.1rem;font-style:italic;color:var(--dark);line-height:1.6;font-weight:400;">
+              "Il progetto di qualità nasce dalla collaborazione, dalla curiosità e dal rispetto del contesto in cui si opera."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Valori</span>
+        <h2>Cosa ci <em>guida</em></h2>
+      </div>
+      <div class="values-grid" style="margin-bottom:6rem;">
+        <div class="value-block" data-reveal>
+          <div class="value-num">01</div>
+          <h3>Qualità senza compromessi</h3>
+          <p>Ogni progetto riceve la stessa cura e attenzione, indipendentemente dalla scala o dal budget. La qualità non è un optional, è il nostro standard.</p>
+        </div>
+        <div class="value-block" data-reveal data-delay="150">
+          <div class="value-num">02</div>
+          <h3>Sostenibilità ambientale</h3>
+          <p>Progettiamo con consapevolezza dell'impatto ambientale. Ogni scelta costruttiva e tecnica tiene conto della sostenibilità nel tempo.</p>
+        </div>
+        <div class="value-block" data-reveal data-delay="0">
+          <div class="value-num">03</div>
+          <h3>Innovazione applicata</h3>
+          <p>Adottiamo strumenti e metodologie aggiornate — BIM, modellazione numerica, GIS — per garantire precisione e coordinamento.</p>
+        </div>
+        <div class="value-block" data-reveal data-delay="150">
+          <div class="value-num">04</div>
+          <h3>Ascolto e dialogo</h3>
+          <p>Il progetto migliore nasce da una comunicazione aperta con il cliente. Ascoltiamo, traduciamo, proponiamo e condividiamo ogni decisione.</p>
+        </div>
+      </div>
+
+      <!-- TEAM -->
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Il Team</span>
+        <h2>Le <em>persone</em> di J+S</h2>
+        <p>Professionisti con competenze diverse, uniti dalla passione per il progetto</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-reveal>
+          <div class="team-avatar">J</div>
+          <h3>J. — Founder</h3>
+          <div class="role">Architetto</div>
+          <p>Responsabile della direzione creativa e della progettazione architettonica. Oltre 20 anni di esperienza su scala residenziale e pubblica.</p>
+        </div>
+        <div class="team-card" data-reveal data-delay="150">
+          <div class="team-avatar">S</div>
+          <h3>S. — Co-founder</h3>
+          <div class="role">Ingegnere Idraulico</div>
+          <p>Specialista in modellazione idrologica e gestione delle acque. Coordina i progetti della business unit Hydraulics.</p>
+        </div>
+        <div class="team-card" data-reveal data-delay="300">
+          <div class="team-avatar">+</div>
+          <h3>Il nostro team</h3>
+          <div class="role">Specialisti & Collaboratori</div>
+          <p>Un gruppo di ingegneri, architetti e tecnici che collaborano in modo flessibile e coordinato su ogni commessa.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:4rem;" data-reveal>
+        <a href="contact.html?subject=join" class="btn btn-primary">Unisciti al team</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo">J<span class="logo-plus">+</span>S</span>
+          <p>Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col"><h4>Servizi</h4><ul>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="hydraulics.html">Hydraulics</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+          </ul></div>
+          <div class="footer-col"><h4>Azienda</h4><ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 J+S Studio. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

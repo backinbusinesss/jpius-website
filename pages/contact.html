@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — J+S</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; align-items:start; }
+    .contact-info h2 { font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2; }
+    .contact-info h2 em { font-style:normal; color:var(--teal); }
+    .contact-info p { line-height:1.9; color:var(--mid); margin-bottom:2rem; }
+    .contact-detail { display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; }
+    .contact-detail-icon { width:40px;height:40px;min-width:40px; border:1px solid var(--border); display:flex;align-items:center;justify-content:center; }
+    .contact-detail-icon svg { width:18px;height:18px;stroke:var(--teal);fill:none;stroke-width:1.5; }
+    .contact-detail-text { font-family:var(--font-head); }
+    .contact-detail-text span { display:block;font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:2px; }
+    .contact-detail-text a, .contact-detail-text p { font-size:0.95rem; color:var(--dark); line-height:1.6; margin:0; }
+    .contact-detail-text a:hover { color:var(--teal); }
+    /* FORM */
+    .contact-form { background:var(--off-white); padding:3rem; border:1px solid var(--border); }
+    .form-group { margin-bottom:1.5rem; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+    label { display:block; font-family:var(--font-head); font-size:0.65rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--mid); margin-bottom:0.6rem; }
+    input, select, textarea {
+      width:100%; padding:0.85rem 1rem;
+      border:1px solid var(--border);
+      background:var(--white);
+      font-family:var(--font-body);
+      font-size:0.9rem; color:var(--dark);
+      border-radius:0;
+      transition:border-color 0.3s;
+      outline:none;
+      -webkit-appearance:none;
+    }
+    input:focus, select:focus, textarea:focus { border-color:var(--teal); }
+    textarea { resize:vertical; min-height:140px; }
+    .form-submit { margin-top:2rem; }
+    .form-submit .btn { width:100%; justify-content:center; }
+    .form-note { font-family:var(--font-head); font-size:0.72rem; color:var(--mid); margin-top:1rem; text-align:center; line-height:1.6; }
+    .success-msg {
+      display:none;
+      padding:1.5rem;
+      background:rgba(0,85,80,0.08);
+      border:1px solid var(--teal);
+      text-align:center;
+      font-family:var(--font-head);
+      font-size:0.9rem;
+      color:var(--teal);
+      margin-top:1rem;
+    }
+    @media(max-width:900px){
+      .contact-grid{grid-template-columns:1fr;}
+      .form-row{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" class="scrolled">
+    <div class="nav-logo"><a href="../index.html"><span class="logo-text">J<span class="logo-plus">+</span>S</span></a></div>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="architecture.html" class="nav-link">Architecture</a>
+      <a href="hydraulics.html" class="nav-link">Hydraulics</a>
+      <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="it">IT</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-hero" style="min-height:40vh;">
+    <div class="page-hero-content">
+      <p class="page-hero-tag">Contatti</p>
+      <h1>Contact</h1>
+      <p>Siamo a disposizione per rispondere alle vostre domande e raccogliere le vostre richieste di progetto.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <div class="contact-grid" data-reveal>
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <span class="section-tag">Dove siamo</span>
+          <h2>Parliamo del<br/><em>vostro progetto</em></h2>
+          <p>Contattaci per un primo incontro conoscitivo senza impegno. Ogni progetto inizia con un'idea: raccontacela.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <span>Sede</span>
+              <p>Via esempio 1, 00000 Città (XX), Italia</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1H5.2a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.1 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <span>Telefono</span>
+              <a href="tel:+390000000000">+39 000 000 0000</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <span>Email</span>
+              <a href="mailto:info@jpius.it">info@jpius.it</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <span>Orari</span>
+              <p>Lun – Ven: 9:00 – 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+          <h3 style="font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:2rem;">Inviaci un messaggio</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome *</label>
+                <input type="text" id="name" name="name" placeholder="Mario Rossi" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="mario@email.it" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Oggetto</label>
+              <select id="subject" name="subject">
+                <option value="">Seleziona un argomento</option>
+                <option value="architecture">Architecture — Progettazione architettonica</option>
+                <option value="hydraulics">Hydraulics — Progettazione idraulica</option>
+                <option value="infrastructure">Infrastructure — Infrastrutture civili</option>
+                <option value="join">Join Us — Candidatura</option>
+                <option value="other">Altro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Messaggio *</label>
+              <textarea id="message" name="message" placeholder="Descrivi brevemente il tuo progetto o la tua richiesta..." required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Invia messaggio</button>
+            </div>
+            <p class="form-note">Risponderemo entro 24 ore lavorative. I dati saranno trattati secondo la nostra <a href="#" style="color:var(--teal);">Privacy Policy</a>.</p>
+            <div class="success-msg" id="successMsg">
+              Messaggio inviato! Ti risponderemo al più presto.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo">J<span class="logo-plus">+</span>S</span>
+          <p>Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col"><h4>Servizi</h4><ul>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="hydraulics.html">Hydraulics</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+          </ul></div>
+          <div class="footer-col"><h4>Azienda</h4><ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 J+S Studio. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    // Pre-select subject from URL param
+    const params = new URLSearchParams(window.location.search);
+    const subj = params.get('subject');
+    if (subj) {
+      const sel = document.getElementById('subject');
+      if (sel) {
+        for (let i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value === subj) { sel.selectedIndex = i; break; }
+        }
+      }
+    }
+    // Form submit demo
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const msg = document.getElementById('successMsg');
+      if (msg) { msg.style.display = 'block'; this.reset(); }
+    });
+  </script>
+</body>
+</html>
