@@ -31,12 +31,12 @@
       </a>
     </div>
     <div class="nav-links" id="navLinks">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="pages/architecture.html" class="nav-link">Architecture</a>
-      <a href="pages/hydraulics.html" class="nav-link">Hydraulics</a>
-      <a href="pages/infrastructure.html" class="nav-link">Infrastructure</a>
-      <a href="pages/about.html" class="nav-link">About Us</a>
-      <a href="pages/contact.html" class="nav-link">Contact</a>
+      <a href="index.html"               class="nav-link active" data-i18n="nav.home">Home</a>
+      <a href="pages/architecture.html"  class="nav-link"        data-i18n="nav.architecture">Architettura</a>
+      <a href="pages/hydraulics.html"    class="nav-link"        data-i18n="nav.hydraulics">Idraulica</a>
+      <a href="pages/infrastructure.html"class="nav-link"        data-i18n="nav.infrastructure">Infrastrutture</a>
+      <a href="pages/about.html"         class="nav-link"        data-i18n="nav.about">Chi Siamo</a>
+      <a href="pages/contact.html"       class="nav-link"        data-i18n="nav.contact">Contatti</a>
       <div class="lang-switch">
         <button class="lang-btn active" data-lang="it">IT</button>
         <span>/</span>
@@ -52,18 +52,16 @@
   <section id="hero">
     <canvas id="threeCanvas"></canvas>
     <div class="hero-content">
-      <div class="hero-tag" data-reveal>Studio di Progettazione</div>
+      <div class="hero-tag" data-reveal data-i18n="home.hero.tag">Studio di Progettazione</div>
       <h1 class="hero-title" data-reveal>
         Design<br/>
         <span class="hero-plus">with a</span><br/>
         <span class="hero-accent">Plus</span>
       </h1>
-      <p class="hero-sub" data-reveal>
-        Architettura · Idraulica · Infrastrutture
-      </p>
+      <p class="hero-sub" data-reveal data-i18n="home.hero.sub">Architettura · Idraulica · Infrastrutture</p>
       <div class="hero-cta" data-reveal>
-        <a href="pages/about.html" class="btn btn-primary">Scopri chi siamo</a>
-        <a href="pages/contact.html" class="btn btn-outline">Contattaci</a>
+        <a href="pages/about.html"   class="btn btn-primary" data-i18n="home.hero.cta1">Scopri chi siamo</a>
+        <a href="pages/contact.html" class="btn btn-outline"  data-i18n="home.hero.cta2">Contattaci</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -76,9 +74,9 @@
   <section id="services">
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="section-tag">Business Units</span>
-        <h2>Le nostre <em>competenze</em></h2>
-        <p>Tre aree di eccellenza per progetti integrati e sostenibili</p>
+        <span class="section-tag" data-i18n="home.services.tag">Business Units</span>
+        <h2 data-i18n-html="home.services.title">Le nostre <em>competenze</em></h2>
+        <p data-i18n="home.services.sub">Tre aree di eccellenza per progetti integrati e sostenibili</p>
       </div>
       <div class="services-grid">
 
@@ -91,10 +89,10 @@
               <line x1="32" y1="8" x2="32" y2="20" stroke="#005550" stroke-width="1.5"/>
             </svg>
           </div>
-          <h3>Architecture</h3>
-          <p>Progettazione architettonica contemporanea che unisce estetica, funzionalità e sostenibilità ambientale.</p>
+          <h3 data-i18n="home.s1.title">Architettura</h3>
+          <p data-i18n="home.s1.desc">Progettazione architettonica contemporanea che unisce estetica, funzionalità e sostenibilità ambientale.</p>
           <a href="pages/architecture.html" class="card-link">
-            Esplora <span class="arrow">→</span>
+            <span data-i18n="home.s1.link">Esplora</span> <span class="arrow">→</span>
           </a>
           <div class="card-bg"></div>
         </article>
@@ -108,10 +106,10 @@
               <path d="M8 50 Q20 38 32 42 Q44 46 56 34" stroke="#005550" stroke-width="1.5" stroke-dasharray="3,3" fill="none"/>
             </svg>
           </div>
-          <h3>Hydraulics</h3>
-          <p>Soluzioni idrauliche avanzate per la gestione sostenibile delle risorse idriche e la mitigazione del rischio.</p>
+          <h3 data-i18n="home.s2.title">Idraulica</h3>
+          <p data-i18n="home.s2.desc">Soluzioni idrauliche avanzate per la gestione sostenibile delle risorse idriche e la mitigazione del rischio.</p>
           <a href="pages/hydraulics.html" class="card-link">
-            Esplora <span class="arrow">→</span>
+            <span data-i18n="home.s2.link">Esplora</span> <span class="arrow">→</span>
           </a>
           <div class="card-bg"></div>
         </article>
@@ -130,10 +128,10 @@
               <line x1="54" y1="36" x2="54" y2="48" stroke="#005550" stroke-width="1.5"/>
             </svg>
           </div>
-          <h3>Infrastructure</h3>
-          <p>Ingegneria delle infrastrutture civili: strade, ponti, reti tecnologiche e opere pubbliche integrate.</p>
+          <h3 data-i18n="home.s3.title">Infrastrutture</h3>
+          <p data-i18n="home.s3.desc">Ingegneria delle infrastrutture civili: strade, ponti, reti tecnologiche e opere pubbliche integrate.</p>
           <a href="pages/infrastructure.html" class="card-link">
-            Esplora <span class="arrow">→</span>
+            <span data-i18n="home.s3.link">Esplora</span> <span class="arrow">→</span>
           </a>
           <div class="card-bg"></div>
         </article>
@@ -147,27 +145,27 @@
     <div class="container">
       <div class="about-strip-inner" data-reveal>
         <div class="about-strip-text">
-          <span class="section-tag">Chi Siamo</span>
-          <h2>Un team <em>multidisciplinare</em><br/>al servizio del territorio</h2>
-          <p>J+S nasce dalla sinergia tra professionalità complementari: architetti, ingegneri idraulici e specialisti in infrastrutture che lavorano insieme per offrire soluzioni progettuali complete e innovative.</p>
-          <a href="pages/about.html" class="btn btn-primary">Scopri il team</a>
+          <span class="section-tag" data-i18n="home.about.tag">Chi Siamo</span>
+          <h2 data-i18n-html="home.about.title">Un team <em>multidisciplinare</em><br/>al servizio del territorio</h2>
+          <p data-i18n="home.about.desc">J+S nasce dalla sinergia tra professionalità complementari: architetti, ingegneri idraulici e specialisti in infrastrutture che lavorano insieme per offrire soluzioni progettuali complete e innovative.</p>
+          <a href="pages/about.html" class="btn btn-primary" data-i18n="home.about.cta">Scopri il team</a>
         </div>
         <div class="about-strip-visual">
           <div class="floating-shape shape-1"></div>
           <div class="floating-shape shape-2"></div>
           <div class="floating-shape shape-3"></div>
           <div class="about-stats">
-            <div class="stat" data-count="150">
+            <div class="stat">
               <span class="stat-number">150+</span>
-              <span class="stat-label">Progetti completati</span>
+              <span class="stat-label" data-i18n="home.stat1.label">Progetti completati</span>
             </div>
-            <div class="stat" data-count="20">
+            <div class="stat">
               <span class="stat-number">20+</span>
-              <span class="stat-label">Anni di esperienza</span>
+              <span class="stat-label" data-i18n="home.stat2.label">Anni di esperienza</span>
             </div>
-            <div class="stat" data-count="3">
+            <div class="stat">
               <span class="stat-number">3</span>
-              <span class="stat-label">Business units</span>
+              <span class="stat-label" data-i18n="home.stat3.label">Business units</span>
             </div>
           </div>
         </div>
@@ -198,29 +196,29 @@
     <div class="container">
       <div class="join-inner" data-reveal>
         <div class="join-text">
-          <span class="section-tag">Join Us</span>
-          <h2>Entra a far parte<br/>del <em>nostro team</em></h2>
-          <p>Siamo sempre alla ricerca di talenti appassionati. Se hai competenze in architettura, ingegneria o discipline correlate, vogliamo conoscerti.</p>
-          <a href="pages/contact.html?subject=join" class="btn btn-primary">Invia la tua candidatura</a>
+          <span class="section-tag" data-i18n="home.join.tag">Join Us</span>
+          <h2 data-i18n-html="home.join.title">Entra a far parte<br/>del <em>nostro team</em></h2>
+          <p data-i18n="home.join.desc">Siamo sempre alla ricerca di talenti appassionati. Se hai competenze in architettura, ingegneria o discipline correlate, vogliamo conoscerti.</p>
+          <a href="pages/contact.html?subject=join" class="btn btn-primary" data-i18n="home.join.cta">Invia la tua candidatura</a>
         </div>
         <div class="join-visual">
           <div class="join-card">
             <div class="join-card-icon">
               <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="#fff" stroke-width="2"/><path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
-            <span>Architetti</span>
+            <span data-i18n="home.join.c1">Architetti</span>
           </div>
           <div class="join-card">
             <div class="join-card-icon">
               <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="20" width="24" height="14" stroke="#fff" stroke-width="2"/><path d="M14 20v-6a6 6 0 0112 0v6" stroke="#fff" stroke-width="2"/></svg>
             </div>
-            <span>Ingegneri</span>
+            <span data-i18n="home.join.c2">Ingegneri</span>
           </div>
           <div class="join-card">
             <div class="join-card-icon">
               <svg viewBox="0 0 40 40" fill="none"><path d="M20 8l2.5 7.5H30l-6 4.5 2.5 7.5-6.5-4.5L13.5 27l2.5-7.5L10 15h7.5z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
             </div>
-            <span>Specialisti</span>
+            <span data-i18n="home.join.c3">Specialisti</span>
           </div>
         </div>
       </div>
@@ -233,7 +231,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <span class="logo-text footer-logo">J<span class="logo-plus">+</span>S</span>
-          <p>Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
+          <p data-i18n-html="footer.tagline">Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
           <div class="footer-social">
             <a href="#" aria-label="LinkedIn" class="social-link">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -248,43 +246,43 @@
         </div>
         <div class="footer-nav">
           <div class="footer-col">
-            <h4>Servizi</h4>
+            <h4 data-i18n="footer.col1.title">Servizi</h4>
             <ul>
-              <li><a href="pages/architecture.html">Architecture</a></li>
-              <li><a href="pages/hydraulics.html">Hydraulics</a></li>
-              <li><a href="pages/infrastructure.html">Infrastructure</a></li>
+              <li><a href="pages/architecture.html"   data-i18n="nav.architecture">Architettura</a></li>
+              <li><a href="pages/hydraulics.html"     data-i18n="nav.hydraulics">Idraulica</a></li>
+              <li><a href="pages/infrastructure.html" data-i18n="nav.infrastructure">Infrastrutture</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Azienda</h4>
+            <h4 data-i18n="footer.col2.title">Azienda</h4>
             <ul>
-              <li><a href="pages/about.html">About Us</a></li>
-              <li><a href="pages/contact.html?subject=join">Join Us</a></li>
+              <li><a href="pages/about.html"              data-i18n="nav.about">Chi Siamo</a></li>
+              <li><a href="pages/contact.html?subject=join" data-i18n="home.join.tag">Join Us</a></li>
               <li><a href="#">News</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Legal</h4>
+            <h4 data-i18n="footer.col3.title">Legal</h4>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Whistleblowing</a></li>
-              <li><a href="#">Governance</a></li>
+              <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+              <li><a href="#" data-i18n="footer.cookie">Cookie Policy</a></li>
+              <li><a href="#" data-i18n="footer.whistle">Whistleblowing</a></li>
+              <li><a href="#" data-i18n="footer.governance">Governance</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 J+S Studio. All rights reserved.</p>
+        <p data-i18n="footer.copy">© 2024 J+S Studio. Tutti i diritti riservati.</p>
         <p>P.IVA — Via esempio, Città</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/three-scene.js"></script>
   <script src="js/main.js"></script>
 </body>

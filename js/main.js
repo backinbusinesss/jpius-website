@@ -108,14 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('mouseenter', () => glow.style.opacity = '1');
   }
 
-  // ---- LANG SWITCH ----
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      // extend here for real i18n
-    });
-  });
+  // Lang switch is handled by i18n.js
 
   // ---- SMOOTH ANCHOR SCROLL ----
   document.querySelectorAll('a[href^="#"]').forEach(a => {

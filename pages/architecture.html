@@ -15,28 +15,26 @@
   <nav id="navbar" class="scrolled">
     <div class="nav-logo"><a href="../index.html"><span class="logo-text">J<span class="logo-plus">+</span>S</span></a></div>
     <div class="nav-links" id="navLinks">
-      <a href="../index.html" class="nav-link">Home</a>
-      <a href="architecture.html" class="nav-link active">Architecture</a>
-      <a href="hydraulics.html" class="nav-link">Hydraulics</a>
-      <a href="infrastructure.html" class="nav-link">Infrastructure</a>
-      <a href="about.html" class="nav-link">About Us</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="../index.html"                class="nav-link"        data-i18n="nav.home">Home</a>
+      <a href="architecture.html"            class="nav-link active" data-i18n="nav.architecture">Architettura</a>
+      <a href="hydraulics.html"              class="nav-link"        data-i18n="nav.hydraulics">Idraulica</a>
+      <a href="infrastructure.html"          class="nav-link"        data-i18n="nav.infrastructure">Infrastrutture</a>
+      <a href="about.html"                   class="nav-link"        data-i18n="nav.about">Chi Siamo</a>
+      <a href="contact.html"                 class="nav-link"        data-i18n="nav.contact">Contatti</a>
       <div class="lang-switch">
         <button class="lang-btn active" data-lang="it">IT</button>
         <span>/</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </nav>
 
   <section class="page-hero">
     <div class="page-hero-content">
-      <p class="page-hero-tag">Business Unit 01</p>
-      <h1>Architecture</h1>
-      <p>Progettazione architettonica contemporanea che unisce estetica, funzionalità e sostenibilità ambientale. Ogni progetto nasce da un dialogo profondo con il contesto e le esigenze del cliente.</p>
+      <p class="page-hero-tag" data-i18n="arch.hero.tag">Business Unit 01</p>
+      <h1 data-i18n="arch.hero.title">Architettura</h1>
+      <p data-i18n="arch.hero.desc">Progettazione architettonica contemporanea che unisce estetica, funzionalità e sostenibilità ambientale. Ogni progetto nasce da un dialogo profondo con il contesto e le esigenze del cliente.</p>
     </div>
   </section>
 
@@ -45,17 +43,12 @@
 
       <div class="two-col" style="margin-bottom:6rem;" data-reveal>
         <div>
-          <span class="section-tag">Il nostro approccio</span>
-          <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;">
-            Architettura come <em style="font-style:normal;color:var(--teal);">sintesi</em> tra forma e funzione
-          </h2>
-          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;">
-            Il nostro studio affronta la progettazione architettonica con un metodo che integra analisi del contesto, ascolto del cliente e ricerca formale. Il risultato sono edifici che rispondono alle esigenze pratiche senza rinunciare alla qualità dello spazio vissuto.
-          </p>
-          <p style="line-height:1.9;color:var(--mid);margin-bottom:2rem;">
-            Lavoriamo su scala residenziale, commerciale e pubblica, sempre con la stessa cura per i dettagli costruttivi e per la sostenibilità ambientale.
-          </p>
-          <a href="contact.html" class="btn btn-teal-outline">Richiedi un preventivo</a>
+          <span class="section-tag" data-i18n="arch.s1.tag">Il nostro approccio</span>
+          <h2 style="font-family:var(--font-head);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--dark);margin:1rem 0 1.5rem;line-height:1.2;"
+              data-i18n-html="arch.s1.title">Architettura come <em>sintesi</em> tra forma e funzione</h2>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:1.5rem;" data-i18n="arch.s1.p1">Il nostro studio affronta la progettazione architettonica con un metodo che integra analisi del contesto, ascolto del cliente e ricerca formale. Il risultato sono edifici che rispondono alle esigenze pratiche senza rinunciare alla qualità dello spazio vissuto.</p>
+          <p style="line-height:1.9;color:var(--mid);margin-bottom:2rem;" data-i18n="arch.s1.p2">Lavoriamo su scala residenziale, commerciale e pubblica, sempre con la stessa cura per i dettagli costruttivi e per la sostenibilità ambientale.</p>
+          <a href="contact.html" class="btn btn-teal-outline" data-i18n="arch.s1.cta">Richiedi un preventivo</a>
         </div>
         <div style="background:var(--teal-faint);border:1px solid var(--border);min-height:400px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
           <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
@@ -68,38 +61,38 @@
               <line x1="150" y1="195" x2="150" y2="230" stroke="#005550" stroke-width="1"/>
             </svg>
           </div>
-          <span style="font-family:var(--font-head);font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--teal);opacity:0.5;position:relative;z-index:1;">Architectural Design</span>
+          <span style="font-family:var(--font-head);font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--teal);opacity:0.5;position:relative;z-index:1;" data-i18n="arch.hero.title">Architettura</span>
         </div>
       </div>
 
       <div class="section-header" data-reveal>
-        <span class="section-tag">Servizi</span>
-        <h2>Cosa <em>offriamo</em></h2>
+        <span class="section-tag" data-i18n="arch.serv.tag">Servizi</span>
+        <h2 data-i18n-html="arch.serv.title">Cosa <em>offriamo</em></h2>
       </div>
       <div class="three-col" style="margin-bottom:6rem;">
         <div class="feature-block" data-reveal data-delay="0">
-          <h3>Progettazione residenziale</h3>
-          <p>Case unifamiliari, condomini e complessi residenziali progettati con attenzione alla qualità abitativa e all'efficienza energetica.</p>
+          <h3 data-i18n="arch.f1.title">Progettazione residenziale</h3>
+          <p data-i18n="arch.f1.desc">Case unifamiliari, condomini e complessi residenziali progettati con attenzione alla qualità abitativa e all'efficienza energetica.</p>
         </div>
         <div class="feature-block" data-reveal data-delay="150">
-          <h3>Architettura commerciale</h3>
-          <p>Uffici, showroom, strutture ricettive e spazi retail che comunicano l'identità del brand attraverso la qualità spaziale.</p>
+          <h3 data-i18n="arch.f2.title">Architettura commerciale</h3>
+          <p data-i18n="arch.f2.desc">Uffici, showroom, strutture ricettive e spazi retail che comunicano l'identità del brand attraverso la qualità spaziale.</p>
         </div>
         <div class="feature-block" data-reveal data-delay="300">
-          <h3>Opere pubbliche</h3>
-          <p>Scuole, biblioteche, centri civici e spazi pubblici che valorizzano il territorio e migliorano la qualità della vita urbana.</p>
+          <h3 data-i18n="arch.f3.title">Opere pubbliche</h3>
+          <p data-i18n="arch.f3.desc">Scuole, biblioteche, centri civici e spazi pubblici che valorizzano il territorio e migliorano la qualità della vita urbana.</p>
         </div>
         <div class="feature-block" data-reveal data-delay="0">
-          <h3>Interior & Allestimenti</h3>
-          <p>Progettazione degli interni coordinata con l'architettura, dalla scelta dei materiali all'arredo su misura.</p>
+          <h3 data-i18n="arch.f4.title">Interior & Allestimenti</h3>
+          <p data-i18n="arch.f4.desc">Progettazione degli interni coordinata con l'architettura, dalla scelta dei materiali all'arredo su misura.</p>
         </div>
         <div class="feature-block" data-reveal data-delay="150">
-          <h3>Restauro e recupero</h3>
-          <p>Interventi su edifici storici e recupero del patrimonio edilizio con metodi rispettosi della preesistenza.</p>
+          <h3 data-i18n="arch.f5.title">Restauro e recupero</h3>
+          <p data-i18n="arch.f5.desc">Interventi su edifici storici e recupero del patrimonio edilizio con metodi rispettosi della preesistenza.</p>
         </div>
         <div class="feature-block" data-reveal data-delay="300">
-          <h3>Consulenza urbanistica</h3>
-          <p>Supporto nelle pratiche urbanistiche, varianti, permessi di costruire e rapporti con le amministrazioni locali.</p>
+          <h3 data-i18n="arch.f6.title">Consulenza urbanistica</h3>
+          <p data-i18n="arch.f6.desc">Supporto nelle pratiche urbanistiche, varianti, permessi di costruire e rapporti con le amministrazioni locali.</p>
         </div>
       </div>
 
@@ -111,40 +104,30 @@
       <div class="footer-top">
         <div class="footer-brand">
           <span class="logo-text footer-logo">J<span class="logo-plus">+</span>S</span>
-          <p>Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
+          <p data-i18n-html="footer.tagline">Design with a Plus.<br/>Architettura · Idraulica · Infrastrutture</p>
         </div>
         <div class="footer-nav">
-          <div class="footer-col">
-            <h4>Servizi</h4>
-            <ul>
-              <li><a href="architecture.html">Architecture</a></li>
-              <li><a href="hydraulics.html">Hydraulics</a></li>
-              <li><a href="infrastructure.html">Infrastructure</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Azienda</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-            </ul>
-          </div>
+          <div class="footer-col"><h4 data-i18n="footer.col1.title">Servizi</h4><ul>
+            <li><a href="architecture.html"   data-i18n="nav.architecture">Architettura</a></li>
+            <li><a href="hydraulics.html"     data-i18n="nav.hydraulics">Idraulica</a></li>
+            <li><a href="infrastructure.html" data-i18n="nav.infrastructure">Infrastrutture</a></li>
+          </ul></div>
+          <div class="footer-col"><h4 data-i18n="footer.col2.title">Azienda</h4><ul>
+            <li><a href="about.html"   data-i18n="nav.about">Chi Siamo</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contatti</a></li>
+          </ul></div>
+          <div class="footer-col"><h4 data-i18n="footer.col3.title">Legal</h4><ul>
+            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.cookie">Cookie Policy</a></li>
+          </ul></div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 J+S Studio. All rights reserved.</p>
-      </div>
+      <div class="footer-bottom"><p data-i18n="footer.copy">© 2024 J+S Studio. Tutti i diritti riservati.</p></div>
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
